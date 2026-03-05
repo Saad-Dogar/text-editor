@@ -2,6 +2,8 @@
 #ifndef STRUCTURES_H
 #define STRUCTURES_H
 
+// Checking commit
+
 // Defines general form of a Table of Content entry
 struct TOC {
 	char title[128]; // Title in Table of Content

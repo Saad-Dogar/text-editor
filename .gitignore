@@ -21,3 +21,7 @@ Release/
 # NuGet
 packages/
 *.nupkg
+
+# Local scripts
+*.bat
+*.vbs

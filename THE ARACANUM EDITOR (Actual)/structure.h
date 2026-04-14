@@ -1,8 +1,6 @@
 #pragma once
-#ifndef STRUCTURES_H
-#define STRUCTURES_H
-
-// Checking commit
+#ifndef SUBMISSION_H
+#define STRUCTURE_H
 
 // Defines general form of a Table of Content entry
 struct TOC {
@@ -18,7 +16,7 @@ public:
 	char* buffer, path[128]; // buffer -> Place where input is stored, path -> Place where path of a new opening file is stored
 	TOC arr[256]; // -> Array of table of contents (max TOC in a document = 256)
 
-	Tab(int x = 20, int y = 40, int z = 2) {
+	Tab(int x = 5, int y = 40, int z = 2) {
 		beingSelected = dirty = false;
 		page = cursor = saves = tocCount = length = 0;
 		anchor = -1;
@@ -58,6 +56,13 @@ public:
 		currentTab = totalTabs = 0; // Tabs start at zero
 		dictionaryCount = x;
 		isSearching = found = mouseClicked = false;
+	}
+  bool canOpenTab() const { return totalTabs < 10; }
+	bool addTab(Tab* tab) {
+		if (tab == nullptr || totalTabs >= 10)
+			return false;
+		tabs[totalTabs++] = tab;
+		return true;
 	}
 };
 

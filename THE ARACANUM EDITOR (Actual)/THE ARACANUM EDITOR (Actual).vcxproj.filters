@@ -24,15 +24,15 @@
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="THE ARACANUM EDITOR (Actual).h">
+    <ClInclude Include="project.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Structures.h">
+    <ClInclude Include="structure.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="THE ARACANUM EDITOR (Actual).cpp">
+    <ClCompile Include="text_editor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -48,8 +48,5 @@
     <Image Include="THE ARACANUM EDITOR (Actual).ico">
       <Filter>Resource Files</Filter>
     </Image>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ARCHITECTURE.md" />
   </ItemGroup>
 </Project>
